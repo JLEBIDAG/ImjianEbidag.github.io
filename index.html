@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jian Laurence S. Ebidag | Web Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="logo" href="#">jian<span>ebidag</span></a>
+
+          <!-- Burger Menu -->
+          <button
+            class="navbar-toggler"
+            id="burgerMenu"
+            type="button"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recent.html">Recent Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="hero">
+      <div class="content">
+        <p class="tagline">WEB DEVELOPER</p>
+        <h1>HI, I AM JIAN LAURENCE S. EBIDAG</h1>
+        <p class="description">
+          My mission is to design and develop a website that you and your
+          audience love.
+        </p>
+        <a href="viber://chat?number=%2B639127339200" class="whatsapp-button">
+          <i class="fab fa-viber"></i> LET'S CHAT ON VIBER
+        </a>
+      </div>
+      <div class="image">
+        <img src="images/me.png" alt="Jian Laurence S. Ebidag" />
+      </div>
+    </main>
+
+    <!-- Particles.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: ["#FFD700", "#e91e63", "#00BCD4", "#fff"] },
+          shape: { type: "circle" },
+          opacity: { value: 0.7, random: true },
+          size: { value: 5, random: true },
+          line_linked: { enable: false },
+          move: {
+            enable: true,
+            speed: 1,
+            direction: "none",
+            random: true,
+            straight: false,
+            bounce: true,
+          },
+        },
+        interactivity: {
+          events: {
+            onhover: { enable: true, mode: "grab" },
+          },
+        },
+        retina_detect: true,
+      });
+
+      // Burger Menu Toggle
+      const burger = document.getElementById("burgerMenu");
+      const navLinks = document.getElementById("navLinks");
+
+      burger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
